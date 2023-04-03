@@ -1,0 +1,272 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+--primarycolor:#ff274b;
+--secondarycolor:#f7bcf7;
+--lightcolor:#ffff;
+--bgcolor-1:rgba(125, 252, 7, 0.979);
+--bgcolor-2:#22282a;
+--padding:8%;
+
+}
+html
+{
+    font-family: "josefin sans";
+    font-size: 16px;
+}
+/*-----------------------------
+ *--------------------houm section
+ -----------------------------*/
+.home
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+    
+}
+.car
+{
+z-index: 10;
+}
+.MY
+{
+    position: relative;
+    top: 100px;
+}
+span
+{
+    color: blue;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+}
+h1
+{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+}
+nav
+{
+   background-color: purple;
+    padding-top: 2.2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li 
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a
+{
+color: white;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+display: inline-block;
+transition: 0.4s;
+}
+nav ul li a:hover
+{
+    color: orangered;
+    transform: scale(1.2);
+    background-color: black;
+    border-radius: 30px;
+    padding: 7px;
+}
+.btn
+{
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.btn:hover
+{
+    background-color: transparent;
+    border: 5px solid black;
+}
+.content
+{    
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    top: 80px;
+    
+}
+.container-texts
+{
+    position: relative;
+    bottom: 50px;
+}
+h1
+{
+    font-size: 2rem;
+    margin: 1.25rem;
+ }
+h2
+{
+font-size: 1.5rem;
+margin: 1.25rem;
+margin-bottom: 2.50rem;
+letter-spacing: 0.12rem;
+}
+h3
+{
+    font-size: 1 rem;
+    margin: 1.25rem;
+    letter-spacing: 0.12rem;
+    color:white;
+
+}
+.social
+{
+    margin-top: 3.5rem;
+
+}
+.social img
+{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+    
+}
+.social img:hover
+{
+    transform: scale(1.2);
+}
+ .container-images
+{
+    position: relative;
+}
+ .container-images img
+{
+   left: 500px;
+   top: 20px;
+   position: absolute;
+
+}
+ .shape
+ {
+    width: 500px;
+    height: 450px;
+    right: 400px;
+ }
+ /*-----------------------------
+ *--------------------About section
+ -----------------------------*/
+ .About
+ {
+    background-color: black;
+    padding: 6rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+ }
+  .About.container-image
+ {
+    position: relative;
+ }
+ .About .container-image img
+ {
+    width: 500px;
+    height: 500px;
+    right: 500px;
+    border-radius:150px ;
+ }
+.About h1
+ {
+    margin-left: 100px;
+    
+ }
+ .Services
+ {
+    
+ }
+ .Services h1
+ {
+    margin-left: 500px;
+    font-size: 60px;
+ }
+.Services img
+ {
+    float: inline;
+    width: 200px;
+    height: 200px;
+    margin: 0 20px 0 20px;
+    margin-bottom: 50px;
+    transition: 2s;
+ }
+ .Services img:hover
+ {
+    transform:scale(30%);
+    
+ }
+ 
+ @media screen and (max-width:575px)
+ {
+   :root
+   {
+  --padding:1.5rem;
+   }  
+   html
+   {
+     font-size: 13px;
+   }
+   .container-image
+   {
+    display: none;
+   }
+   
+   nav > a 
+{ 
+    display:none ;
+   }
+   nav ul
+   {
+    display: none;
+   }
+   .container-texts
+   {
+    position: relative;
+    top: 0;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+   }
+   .Services h1
+   {
+    position: relative;
+    margin: 50px 100px  50px;
+    font-size: 30px;
+   }
+   .Services img
+   {
+      margin: 10px;
+      width: 100px;
+      height: 100px;
+      
+    
+   }
+
+ } 
